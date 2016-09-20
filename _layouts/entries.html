@@ -1,0 +1,41 @@
+
+
+        {% include header.html %}
+				<!-- Menu -->
+					{% include menu.html %}
+
+				<!-- Main -->
+        <!-- Main -->
+          <div id="main">
+            <div class="inner">
+              <h1>Generic Page</h1>
+              <span class="image main"><img src="{{page.mainImage}}" alt="" /></span>
+                {{page.body}}
+                {% for post in site.posts %}
+                  {% if post.label contains page.label %}
+                    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                    <p class="author">
+                      <span class="date">{{ post.date }} HELLO</span>
+                    </p>
+                    <div class="content">
+                      {{ post.content }} GOODBYE
+                    </div>
+                    {% endif %}
+                {% endfor %}
+              </div>
+          </div>
+
+				<!-- Footer -->
+        {% include footer.html %}
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
