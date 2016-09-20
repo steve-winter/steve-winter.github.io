@@ -1,87 +1,100 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Tom Preston-Werner" />
-   <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
-   <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM"/>
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a>
 
-   <!-- Typekit -->
-   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-</head>
-<body>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
 
-<!-- ClickTale Top part -->
-<script type="text/javascript">
-var WRInitTime=(new Date()).getTime();
-</script>
-<!-- ClickTale end of Top part -->
+						</div>
+					</header>
 
-<div class="site">
-  <div class="title">
-    <a href="/">Tom Preston-Werner</a>
-    <a class="extra" href="/">home</a>
-  </div>
+				<!-- Menu -->
+					{% include menu.html %}
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
   {{ content }}
-
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Tom Preston-Werner
-        <br />
-        Cofounder of
-          <a href="https://codestarter.org/">Codestarter</a>,
-          <a href="https://github.com/">GitHub</a>
-        <br />
-        tom@mojombo.com
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/mojombo/">github.com/mojombo</a><br />
-        <a href="http://twitter.com/mojombo/">twitter.com/mojombo</a><br />
-      </p>
-    </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/tom-preston-werner">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
-  </div>
+</div>
 </div>
 
-<a href="http://github.com/mojombo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+  <section>
+    <h2>Get in touch</h2>
+    <form method="post" action="#">
+      <div class="field half first">
+        <input type="text" name="name" id="name" placeholder="Name" />
+      </div>
+      <div class="field half">
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </div>
+      <div class="field">
+        <textarea name="message" id="message" placeholder="Message"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Send" class="special" /></li>
+      </ul>
+    </form>
+  </section>
+  <section>
+    <h2>Follow</h2>
+    <ul class="icons">
+      <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+      <li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+      <li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+      <li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+      <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+    </ul>
+  </section>
+  <ul class="copyright">
+    <li>&copy; Steve Winter. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+  </ul>
+</div>
+</footer>
 
-<!-- ClickTale Bottom part -->
-<div id="ClickTaleDiv" style="display: none;"></div>
-<script type="text/javascript">
-if(document.location.protocol!='https:')
-  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-if(typeof ClickTale=='function') ClickTale(206,0.3,"www03");
-</script>
-<!-- ClickTale end of Bottom part -->
+</div>
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-6016902-1");
-pageTracker._trackPageview();
-</script>
-<!-- Google Analytics end -->
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+<script src="/js/main.js"></script>
 
 </body>
 </html>
