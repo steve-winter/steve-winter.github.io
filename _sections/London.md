@@ -8,13 +8,3 @@ permalink: /journeys/london
 mainImage: https://media.timeout.com/images/100644443/image.jpg
 summary: Our time in London
 ---
-
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
