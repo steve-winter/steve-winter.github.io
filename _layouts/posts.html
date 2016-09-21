@@ -2,9 +2,8 @@
 
         {% include header.html %}
 				<!-- Menu -->
-					{% include menu.html %}
+				{% include menu.html %}
 
-				<!-- Main -->
         <!-- Main -->
           <div id="main">
             <div class="inner">
@@ -16,6 +15,21 @@
                     <div class="content">
                       {{ page.content }}
                     </div>
+                    <!-- <span class="content">
+                      {% if page.previous != nil %}
+                      <a href={{page.previous.url}} style="padding-right:10px">< Previous</a>
+                      {% endif %}
+                      {% if page.next.url != nil %}
+                      <a href={{page.next.url}}>Next > </a>
+                      {% endif %}
+                    </span>-->
+                      <ul>
+                      {% for post in site.posts %}
+                        {% if post.label contains page.label %}
+                            <li><a href="{{ post.url }}">{{ post.title }} | {{post.date}}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                      </ul>
               </div>
           </div>
 
@@ -23,13 +37,6 @@
         {% include footer.html %}
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
-			<script src="/js/skel.min.js"></script>
-			<script src="/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/js/main.js"></script>
-
+      {% include scripts.html %}
 	</body>
 </html>
