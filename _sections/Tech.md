@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: entries
 title:  "Tech"
 date:   2016-09-21T14:19:58.416Z
 categories: jekyll tech
