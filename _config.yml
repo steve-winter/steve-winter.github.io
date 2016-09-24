@@ -26,6 +26,11 @@ github_username:  steve-winter
 markdown: kramdown
 theme: minima
 
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
 
 collections:
   sections:
