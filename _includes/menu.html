@@ -4,8 +4,6 @@
   <ul>
     <li><a href="/">Home</a></li>
 
-
-
     {% assign sectionCount = '0' %}
     {% for section in site.sections %}
     {% capture sectionCount %}{{ sectionCount | plus: '1' }}{% endcapture %}
@@ -28,7 +26,6 @@
         transition-duration: 2s;
         height: 100%;
       }
-
     </style>
 
       <li class="menuItem{{sectionCount}}"><a href="{{ section.url }}">{{ section.title }}</a>

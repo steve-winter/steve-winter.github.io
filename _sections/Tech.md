@@ -7,4 +7,5 @@ label: tech
 permalink: /tech
 mainImage: blank
 tileImage: /images/tech/macbook_square_tile.jpg
+summary: All things tech
 ---

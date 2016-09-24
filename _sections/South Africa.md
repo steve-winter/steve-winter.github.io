@@ -7,6 +7,8 @@ label: south_africa
 permalink: /journeys/south_africa
 mainImage: blank
 tileImage: /images/south_africa/krugerelephant.jpg
+summary: South African Safari's
+
 ---
 
 South Africa!
