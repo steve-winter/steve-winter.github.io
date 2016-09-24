@@ -1,4 +1,4 @@
-
+<!-- Template adapted from http://html5up.net -->
 
         {% include header.html %}
 				<!-- Menu -->
@@ -7,8 +7,10 @@
         <!-- Main -->
           <div id="main">
             <div class="inner">
-              <span class="image main"><img src="{{page.mainImage}}" alt="" /></span>
-                    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+              {% if page.mainImage != "blank" %}
+                <span class="image main"><img src="{{page.mainImage}}" alt="" /></span>
+              {% endif %}
+                  <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
                     <p class="author">
                       <span class="date">{{ page.date }}</span>
                     </p>

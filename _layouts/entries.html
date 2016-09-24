@@ -1,3 +1,4 @@
+<!-- Template adapted from http://html5up.net -->
 
 
         {% include header.html %}
@@ -11,9 +12,13 @@
               {% if page.mainImage != "blank" %}
                 <span class="image main"><img src="{{page.mainImage}}" alt="" /></span>
               {% endif %}
+              {% if page.mainImage == "blank" %}
+                <span class="image main"><img src="/images/pic01.jpg" alt="" /></span>
+              {% endif %}
                 {{page.content}}
                 {% for post in site.posts %}
                   {% if post.label contains page.label %}
+
                     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
                     <p class="author">
                       <span class="date">{{ post.date }}</span>
