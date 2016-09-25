@@ -30,16 +30,25 @@
 
       <li class="menuItem{{sectionCount}}"><a href="{{ section.url }}">{{ section.title }}</a>
           <div class="menuList{{sectionCount}}">
-            <ul>
+            
             {% assign drawnHeader = '0' %}
             {% for post in site.posts %}
                 {% if post.label contains section.label %}
+                {% if drawnHeader == '0' %}
+                  <ul>
+                {% endif %}
+                {% capture drawnHeader %}{{ drawnHeader | plus: '1' }}{% endcapture %}
                     <li><a href="{{ post.url }}">{{ post.title }} | {{post.date}}</a></li>
                 {% endif %}
             {% endfor %}
+                {% if drawnHeader == '0' %}
+                <ul style="display:none">
+                <li style="display:none"></li>
+                {% endif %}
                 </ul>
           </div>
       </li>
-    {% endfor %}
+{% endfor %}
+    <li><a style="display:inline" href="/cv">CV</a> - <a style="display:inline" href="/cv/download">Direct Download</a></li>
   </ul>
 </nav>

@@ -1,10 +1,10 @@
 ---
 layout: posts
-title:  "Thoughts on South Africa"
+title:  "Setting up"
 date:   2016-09-21T14:45:56.066Z
-categories: south_africa
+categories: tech
 permalink: /:categories/:year/:month/:day/:title.html
-label: south_africa
+label: tech
 mainImage: /images/south_africa/krugerelephant.jpg
 ---
 Hello World
