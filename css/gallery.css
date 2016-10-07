@@ -18,7 +18,7 @@ ul.rig li {
 	-webkit-box-sizing: border-box;
 }
 ul.rig li img {
-	max-width: 100%;
+	max-width: 80%;
 	height: auto;
 	margin: 0 0 10px;
 }
@@ -43,7 +43,23 @@ ul.rig.columns-4 li {
 	width: 22.5%; /* this value + 2.5 should = 25% */
 }
 
-@media (max-width: 480px) {
+.frameg {
+		display: table-cell; vertical-align: middle;
+}
+
+.frameg:hover {
+	-moz-transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	transform: scale(1.04);
+}
+
+.timg {
+		height: auto;
+}
+
+
+@media (max-width: 600px) {
 	ul.grid-nav li {
 		display: block;
 		margin: 0 0 5px;
@@ -57,14 +73,5 @@ ul.rig.columns-4 li {
 	ul.rig li {
 		width: 100% !important; /* over-ride all li styles */
 		margin: 0 0 20px;
-	}
-
-	  .frame {
-
-	    display: table-cell; vertical-align: middle;
-	}
-
-	.timg {
-	    height: auto;
 	}
 }

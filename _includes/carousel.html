@@ -1,14 +1,16 @@
 
+<center>
 <ul class="rig columns-3">
   {% for image in site.static_files %}
   {% if image.path contains include.imageDir%}
-  <li><div class="frame" style="height:300px">
-    <a href="{{site.url}}{{ image.path }}" class="swipebox" title="">
+  <li><div class="frameg" style="height:300px">
+    <a href="{{ image.path }}" class="swipebox" title="">
       <img class="timg" src="{{ image.path }}" alt="image" />
     </a></div></li>
   {% endif %}
   {% endfor %}
 </ul>
+</center>
 
 <script type="text/javascript">
 ;( function( $ ) {
