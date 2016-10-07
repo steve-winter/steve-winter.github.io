@@ -30,7 +30,7 @@
 
       <li class="menuItem{{sectionCount}}"><a href="{{ section.url }}">{{ section.title }}</a>
           <div class="menuList{{sectionCount}}">
-            
+
             {% assign drawnHeader = '0' %}
             {% for post in site.posts %}
                 {% if post.label contains section.label %}
@@ -49,6 +49,8 @@
           </div>
       </li>
 {% endfor %}
-    <li><a style="display:inline" href="/cv">CV</a> - <a style="display:inline" href="/cv/download">Direct Download</a></li>
+    <li><div>
+      <a style="display:inline" href="/cv">CV</a> - <a style="display:inline" href="/cv/download">Direct Download</a>
+    </div></li>
   </ul>
 </nav>
