@@ -2,16 +2,16 @@
 # SEO settings
 title: "Steve Winter"
 title2: "space" # default: ""
-description: "Just another minimalist Jekyll theme for technical writing."
-keywords: "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
-url: http://heiswayi.github.io/thinkspace # site url
+description: "Discussion on all things tech and security"
+keywords: "tech, security, golang, reactjs, google, netflix"
+url: https://steve-winter.github.io # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
-google_analytics: UA-XXXXX-XX
-repo: http://github.com/steve-winter/steve-winter.github.io
+google_analytics: UA-84566934-1
+repo: https://github.com/steve-winter/steve-winter.github.io
 disqus_shortname: "steve-winter-github-io"
-# twitter_username: "HeiswayiNrird"
+twitter_username: "stephen_winter"
 comments: true
 
 # Build settings
