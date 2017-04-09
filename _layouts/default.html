@@ -1,18 +1,14 @@
-<!-- Template adapted from http://html5up.net -->
-
-
-        {% include header.html %}
-				<!-- Menu -->
-					{% include menu.html %}
-
-				<!-- Main -->
-        {{content}}
-
-				<!-- Footer -->
-        {% include footer.html %}
-
-			</div>
-      {% include scripts.html %}
-
-	</body>
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <main class="wrapper">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </body>
 </html>
