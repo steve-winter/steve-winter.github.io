@@ -1,7 +1,7 @@
 
 # SEO settings
 title: "Steve Winter"
-title2: "space" # default: ""
+title2: "" # default: ""
 description: "Discussion on all things tech and security"
 keywords: "tech, security, golang, reactjs, google, netflix"
 url: https://steve-winter.github.io # site url
