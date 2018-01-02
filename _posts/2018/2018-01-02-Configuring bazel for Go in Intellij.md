@@ -7,17 +7,18 @@ keywords: "go bazel intellij"
 author: Steve Winter
 ---
 
-Install bazel plugin
+*Install bazel plugin
 
-To configure Bazel with Go in Intellij (for existing projects), update your .idea/workspace.xml to use;
+*To configure Bazel with Go in Intellij (for existing projects), update your .idea/workspace.xml to use;
 
-```<component name="BlazeImportSettings">
+```
+<component name="BlazeImportSettings">
     <option name="buildSystem" value="Bazel" />
     <option name="projectDataDirectory" value="$PROJECT_DIR$" />
     <option name="projectName" value="{{project-name}}" />
     <option name="projectViewFile" value="$PROJECT_DIR$/.bazelproject" />
     <option name="workspaceRoot" value="$PROJECT_DIR$" />
   </component>
-  ```
+```
   
   Above the 'changelistmanager' component.
