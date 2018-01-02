@@ -7,9 +7,9 @@ keywords: "go bazel intellij"
 author: Steve Winter
 ---
 
-*Install bazel plugin
+1. Install bazel plugin
 
-*To configure Bazel with Go in Intellij (for existing projects), update your .idea/workspace.xml to use;
+2. To configure Bazel with Go in Intellij (for existing projects), update your .idea/workspace.xml to use;
 
 ```
 <component name="BlazeImportSettings">
