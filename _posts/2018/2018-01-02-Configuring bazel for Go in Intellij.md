@@ -26,7 +26,7 @@ I have been scratching my head on this one for a couple of hours so sharing the 
   
   Above the 'changelistmanager' component.
   
-  4. This possible also requires your .bazel project be configured;
+  4. This possiblt also requires your .bazelproject be configured. Seems to be limited documentation on this file but it is the file that tells the bazel plugin what to 'see' in your project.
   
   ```
   directories:
