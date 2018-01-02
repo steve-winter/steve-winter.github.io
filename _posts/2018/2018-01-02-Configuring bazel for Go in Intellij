@@ -1,4 +1,11 @@
-# Configuring Intellij Bazel plugin to use Go on existing Projects
+---
+layout: post
+title: "Configuring Intellij Bazel plugin to use Go on existing Projects"
+comments: true
+description: "Configuring Intellij Bazel plugin to use Go on existing Projects"
+keywords: "go bazel intellij"
+author: Steve Winter
+---
 
 Install bazel plugin
 
