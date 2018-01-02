@@ -6,10 +6,13 @@ description: "Configuring Intellij Bazel plugin to use Go on existing Projects"
 keywords: "go bazel intellij"
 author: Steve Winter
 ---
+I have been scratching my head on this one for a couple of hours so sharing the steps here;
 
 1. Install bazel plugin
 
-2. To configure Bazel with Go in Intellij (for existing projects), update your .idea/workspace.xml to use;
+2. Set executable home in 'Other Settings' to Bazel installation (for me this was in /usr/local/Cellar/bazel)
+
+3. To enable Bazel with Go in Intellij (for existing projects), update your .idea/workspace.xml to use;
 
 ```
 <component name="BlazeImportSettings">
@@ -22,3 +25,23 @@ author: Steve Winter
 ```
   
   Above the 'changelistmanager' component.
+  
+  4. This possible also requires your .bazel project be configured;
+  
+  ```
+  directories:
+  .
+
+targets:
+  //...:all
+
+additional_languages:
+  # Uncomment any additional languages you want supported
+  # android
+  # dart
+  go
+  # javascript
+  # python
+  # scala
+  # typescript
+```
